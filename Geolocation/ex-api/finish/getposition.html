@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <title></title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+	<meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.3.0.min.css"/>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.3.0.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" src="js/geo1.js"></script>
+    <script type="text/javascript">
+
+
+	
+	function onBodyLoad()
+	{		
+		document.addEventListener("deviceready", onDeviceReady, false);
+	}
+	
+	function onDeviceReady()
+	{
+		
+		$('#btnGetGeo').bind('touchstart', gettingGeo );	
+	}
+    
+    </script>
+  </head>
+  <body onload="onBodyLoad()">
+  <div data-role="page" id="page">
+    <div data-role="header">
+      <h1>Nextflow: Geolocation</h1>
+    </div>
+    <div data-role="content">
+    <a href="#" data-role="button" id="btnGetGeo">Get Current Location</a>
+    <div data-role="fieldcontain">
+      <label for="textinput">Latitude:</label>
+      <input type="text" name="textinput" id="txiLatitude" value=""  />
+      <label for="textinput">Longitude:</label>
+      <input type="text" name="textinput" id="txiLongitude" value=""  />
+      <label for="textinput">Altitude:</label>
+      <input type="text" name="textinput" id="txiAltitude" value=""  />
+      <label for="textinput">Accuracy:</label>
+      <input type="text" name="textinput" id="txiAccuracy" value=""  />
+      <label for="textinput">Altitude Accuracy:</label>
+      <input type="text" name="textinput" id="txiAltitudeAccuracy" value=""  />
+      <label for="textinput">Heading:</label>
+      <input type="text" name="textinput" id="txiHeading" value=""  />
+      <label for="textinput">Speed:</label>
+      <input type="text" name="textinput" id="txiSpeed" value=""  />
+      <label for="textinput">Timestamp:</label>
+      <input type="text" name="textinput" id="txiTimestamp" value=""  />
+    </div>
+    
+    
+    </div>
+    
+  </div>
+	
+  </body>
+</html>

@@ -1,0 +1,29 @@
+body, div, p, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+
+#buttonShow {
+    
+    margin: 10px;
+    padding: 30px;
+    
+    background-color: #ff97a9;
+    display: block;
+    
+
+    font-size: 22px;
+    text-align: center;
+    color: black;
+    text-decoration-line:none;
+    
+}
+#buttonShow:active {
+    background-color: #ffc2cd;
+    text-decoration-line:none;
+}
+#currentMap {
+    background-color: green;
+    margin: 0;
+}

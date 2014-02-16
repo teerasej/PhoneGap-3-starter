@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.3.0.min.css"/>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.3.0.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script>
+
+	
+	function onBodyLoad()
+	{		
+		document.addEventListener("deviceready", onDeviceReady, false);
+	}
+	
+	
+	function onDeviceReady()
+	{
+		// do your thing!
+        
+        // Add Event Listener for each button.
+	}
+	
+	function onPhotoDataSuccess(imageData) {
+     
+	  // log image 
+	 
+      // log imageData 
+
+	  // Set imgURI css to block size
+     
+
+      //$('#imgURI').attr('src',"data:image/jpeg;base64," + imageData);
+     
+    }
+
+    function onPhotoURISuccess(imageURI) {
+      
+	  // log image 
+	 
+      // log imageURI 
+
+	  // Reset imgURI css to inherit width & height
+     
+
+      //$('#imgURI').attr('src',imageURI);
+    }
+
+    
+    function capturePhoto(event,data) {
+      
+	 
+    }
+	
+	function getPhoto(event,data) {
+		
+    }
+
+    function onFail(message) {
+      navigator.notification.alert("Failed because: " + message);
+    }
+
+    
+    </script>
+</head>
+<body onload="onBodyLoad()">
+<div data-role="page" id="page">
+  <div data-role="header">
+    <h1>NextFlow Camera</h1>
+  </div>
+  <div data-role="content"> 
+  	<a href="#" data-role="button" id="btnTakePhoto">Take Photo</a>
+    <a href="#" data-role="button" id="btnFromLibrary">Browse Library</a>
+    <img id="imgURI"/>
+  </div>
+</div>
+</body>
+</html>
